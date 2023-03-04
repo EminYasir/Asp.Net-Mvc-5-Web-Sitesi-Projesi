@@ -1,0 +1,17 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<AdresBlog>
+
+
+@foreach (var x in Model)
+{
+    <div class="contact-add">
+        <h3>@x.Baslik</h3>
+        <p>@x.Aciklama</p>
+        <p>@x.AdresAcik</p>
+        <p>Konum:@x.Konum</p>
+        <p>Telefon:@x.Telefon</p>
+        <p>Email:<a href="mailto:@x.Mail">@x.Mail</a></p>
+
+
+    </div>
+}

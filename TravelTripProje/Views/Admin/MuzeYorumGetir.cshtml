@@ -1,0 +1,27 @@
+﻿@model TravelTripProje.Models.Siniflar.MuzeYorumlar
+@{
+    ViewBag.Title = "MuzeYorumGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>MuzeYorumGetir</h2>
+
+@using (Html.BeginForm("MuzeYorumGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Kullaniciadi)
+    @Html.TextBoxFor(x => x.Kullaniciadi, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Mail)
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Muzeid)
+    @Html.TextBoxFor(x => x.Muzeid, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Yorum)
+    @Html.TextAreaFor(x => x.Yorum, 15, 1, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Muze Yorum Güncelle</button>
+}

@@ -1,0 +1,39 @@
+﻿@model TravelTripProje.Models.Siniflar.Otel
+@{
+    ViewBag.Title = "YeniOtelEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Otel Ekle</h2>
+
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control", @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextAreaFor(x => x.Aciklama, 15, 1, new { @class = "form-control" , @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.Yildiz)
+    @Html.TextBoxFor(x => x.Yildiz, new { @class = "form-control", @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.Otelimage)
+    @Html.TextBoxFor(x => x.Otelimage, new { @class = "form-control" , @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.imageDetails1)
+    @Html.TextBoxFor(x => x.imageDetails1, new { @class = "form-control" , @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.imageDetails2)
+    @Html.TextBoxFor(x => x.imageDetails2, new { @class = "form-control", @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.imageDetails3)
+    @Html.TextBoxFor(x => x.imageDetails3, new { @class = "form-control", @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.imageDetails4)
+    @Html.TextBoxFor(x => x.imageDetails4, new { @class = "form-control" , @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.imageDetails5)
+    @Html.TextBoxFor(x => x.imageDetails5, new { @class = "form-control", @required = "required" })
+    <br />
+    <button class="btn btn-primary">Otel Ekle</button>
+</form>

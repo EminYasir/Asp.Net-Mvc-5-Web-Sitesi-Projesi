@@ -1,0 +1,36 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<AdresBlog>
+@{
+    ViewBag.Title = "AdresListele";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AdresListele</h2>
+
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>BAŞLIK</th>
+        <th>AÇIKLAMA</th>
+        <th>ADRES AÇIK</th>
+        <th>MAİL</th>
+        <th>TELEFON</th>
+        <th>KONUM</th>
+        <th>GÜNCELLE</th>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.Baslik</td>
+            <td>@x.Aciklama</td>
+            <td>@x.AdresAcik</td>
+            <td>@x.Mail</td>
+            <td>@x.Telefon</td>
+            <td>@x.Konum</td>
+            <td><a href="/Admin/AdresGetir/@x.ID" class="btn btn-danger">Güncelle</a></td>
+        </tr>
+    }
+</table>

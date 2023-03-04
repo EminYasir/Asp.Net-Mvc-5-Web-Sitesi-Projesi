@@ -1,0 +1,58 @@
+﻿@model TravelTripProje.Models.Siniflar.Muze
+@{
+    ViewBag.Title = "MuzeGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Muze Güncelleme Sayfası</h2>
+
+<br />
+@using (Html.BeginForm("MuzeGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.Id)
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.ZiyaretSayisi)
+    @Html.TextBoxFor(x => x.ZiyaretSayisi, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextAreaFor(x => x.Aciklama, 15, 1, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails1" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails1)
+    @Html.TextBoxFor(x => x.imageDetails1, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails2" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails2)
+    @Html.TextBoxFor(x => x.imageDetails2, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails1" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails3)
+    @Html.TextBoxFor(x => x.imageDetails3, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails4" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails4)
+    @Html.TextBoxFor(x => x.imageDetails4, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails5" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails5)
+    @Html.TextBoxFor(x => x.imageDetails5, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails6" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails6)
+    @Html.TextBoxFor(x => x.imageDetails6, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Müze Güncelle</button>
+    <br />
+    <br />
+}

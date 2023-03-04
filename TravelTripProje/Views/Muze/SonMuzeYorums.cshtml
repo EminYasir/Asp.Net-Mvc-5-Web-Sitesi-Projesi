@@ -1,0 +1,16 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<MuzeYorumlar>
+
+<div class="comments">
+    <h3>Son Yorumlar</h3>
+    <ul>
+        @foreach (var x in Model)
+        {
+            <li><a href="/Muze/MuzeDetails/@x.Muzeid">@x.Yorum.Substring(0, 5)...</a> -> <a href="/Muze/MuzeDetails/@x.Muzeid">@x.Otel.Baslik</a></li>
+        }
+
+    </ul>
+</div>
+
+
+

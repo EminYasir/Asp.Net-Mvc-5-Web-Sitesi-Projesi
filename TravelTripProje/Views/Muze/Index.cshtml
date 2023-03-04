@@ -1,0 +1,56 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Muze>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/web2/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/web2/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!----webfonts---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+    <!----//webfonts---->
+
+</head>
+<body>
+    <!--/header-->
+    <div class="single">
+        <div class="container" style="padding-top:20px; width:70%; position:relative;">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 single-main">
+                @foreach (var x in Model)
+                {
+                    <div class="single-grid" style="width: 100%; height: 100%; margin-bottom:30px; ">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="display:flex; justify-content:center;">
+                            <img src="@x.imageDetails1" alt="" style="margin-bottom:10px; width:350px; height:185px;" />
+                        </div>
+                        <div>
+                            <a href="/Muze/MuzeDetails/@x.Id" style="margin-left:15px;"> @x.Baslik</a>
+                            <div class="col-lg-8 col-md-0 col-sm-0 col-xs-0">
+                                <p>
+                                    @x.Aciklama.Substring(0, 320) .....<br />
+                                    <a href="/Muze/MuzeDetails/@x.Id" style="margin-top:0px;"> Devamı >>></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0 side-content sabit" style="margin-top: 20px; position: fixed; margin-left: 52%;">
+                @Html.Action("EnCokZiyaretMuze", "Muze")
+                @Html.Action("SonMuzeYorums", "Muze")
+            </div>
+        </div>
+    </div>
+</body>
+</html>

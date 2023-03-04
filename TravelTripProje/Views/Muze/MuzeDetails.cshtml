@@ -1,0 +1,87 @@
+﻿@model TravelTripProje.Models.Siniflar.MuzeYorum
+@{
+    ViewBag.Title = "MuzeDetails";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/web2/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/web2/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!----webfonts---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+    <!----//webfonts---->
+</head>
+<body>
+    <div class="single">
+        <div class="container">
+            <div class="col-md-12 single-main">
+                <div class="single-grid">
+                    @foreach (var x in Model.Deger1)
+                    {
+                        <div class="container" style="width: 100%; height: 100%; ">
+                            <div class="row" style="margin-bottom:10px;">
+                                <div class="col-lg-8 col-md-4 col-sm-4 col-xs-4">
+                                    <img src="@x.imageDetails1" alt="" style="width:100%;height:auto;" />
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-bottom:15px;">
+                                    <img src="@x.imageDetails2" alt="" style="width:100%;height:auto;" />
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <img src="@x.imageDetails3" alt="" style="width:100%;height:auto;" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <img src="@x.imageDetails4" alt="" style="width:100%;height:auto;" />
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <img src="@x.imageDetails6" alt="" style="width:100%;height:auto;" />
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <img src="@x.imageDetails5" alt="" style="width:100%;height:auto;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display:block;">
+                            <h2 style="margin-bottom:-25px;">@x.Baslik</h2>
+                            <p style="font-size: 16px; margin-left: 10px; margin-top: 10px; ">
+                                Ziyaret Sayısı -> @x.ZiyaretSayisi
+                            </p>
+                        </div>
+                        <p>
+                            @x.Aciklama
+                        </p>
+                    }
+                </div>
+                @foreach (var y in Model.Deger2)
+                {
+                    <ul class="comment-list">
+                        <li>
+                            <img src="~/web2/images/avatar.png" class="img-responsive" alt="">
+                            <div class="desc">
+                                <p style="font-weight:bold">@y.Kullaniciadi</p>
+                                <br>
+                                <p>@y.Yorum</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                }
+                @Html.Action("MuzeYorumYap", "Muze")
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

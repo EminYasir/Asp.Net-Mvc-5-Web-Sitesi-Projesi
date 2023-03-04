@@ -1,0 +1,34 @@
+﻿@model TravelTripProje.Models.Siniflar.AdresBlog
+@{
+    ViewBag.Title = "AdresGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AdresGetir</h2>
+
+<br />
+@using (Html.BeginForm("AdresGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.AdresAcik)
+    @Html.TextBoxFor(x => x.AdresAcik, new { @class = "form-control"})
+    <br />
+    @Html.LabelFor(x => x.Mail)
+    @Html.TextAreaFor(x => x.Mail , new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Telefon)
+    @Html.TextAreaFor(x => x.Telefon, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Konum)
+    @Html.TextAreaFor(x => x.Konum, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Adres Güncelle</button>
+}

@@ -1,0 +1,56 @@
+﻿@model TravelTripProje.Models.Siniflar.Otel
+@{
+    ViewBag.Title = "OtelGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Otel Güncelleme Sayfası</h2>
+
+<br />
+@using (Html.BeginForm("OtelGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.Id)
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Yildiz)
+    @Html.TextBoxFor(x => x.Yildiz, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextAreaFor(x => x.Aciklama, 15, 1, new { @class = "form-control" })
+    <br />
+    <img src="@Model.Otelimage" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.Otelimage)
+    @Html.TextBoxFor(x => x.Otelimage, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails1" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails1)
+    @Html.TextBoxFor(x => x.imageDetails1, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails2" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails2)
+    @Html.TextBoxFor(x => x.imageDetails2, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails1" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails3)
+    @Html.TextBoxFor(x => x.imageDetails3, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails4" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails4)
+    @Html.TextBoxFor(x => x.imageDetails4, new { @class = "form-control" })
+    <br />
+    <img src="@Model.imageDetails5" style="width:100px;height:60px; " alt="Alternate Text" />
+    <br />
+    @Html.LabelFor(x => x.imageDetails5)
+    @Html.TextBoxFor(x => x.imageDetails5, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Güncelle</button><br /><br />
+}

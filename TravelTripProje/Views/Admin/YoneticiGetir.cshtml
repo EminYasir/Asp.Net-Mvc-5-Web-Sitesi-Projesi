@@ -1,0 +1,22 @@
+﻿@model TravelTripProje.Models.Siniflar.Admin
+@{
+    ViewBag.Title = "YoneticiGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>YoneticiGetir</h2>
+
+<br />
+@using (Html.BeginForm("YoneticiGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Kullanici)
+    @Html.TextBoxFor(x => x.Kullanici, new { @class = "form-control", @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.Sifre)
+    @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control", @required = "required" })
+    <br />
+    <button class="btn btn-success">Yönetici Güncelle</button>
+}

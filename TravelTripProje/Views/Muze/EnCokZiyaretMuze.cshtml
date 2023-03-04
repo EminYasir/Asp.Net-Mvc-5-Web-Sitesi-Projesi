@@ -1,0 +1,11 @@
+﻿@model TravelTripProje.Models.Siniflar.MuzeYorum
+<div class="recent">
+    <h3>En Çok Ziyaret Edilen Muzeler</h3>
+    <ul>
+        @foreach (var x in Model.Deger3)
+        {
+            <li><a href="/Muze/MuzeDetails/@x.Id">@x.Baslik</a></li>
+        }
+    </ul>
+</div>
+

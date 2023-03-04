@@ -1,0 +1,10 @@
+﻿@model TravelTripProje.Models.Siniflar.OtelYorum
+<div class="recent">
+    <h3>Beş Yıldızlı Otellerimiz</h3>
+    <ul>
+        @foreach (var x in Model.Deger3)
+        {
+            <li><a href="/Otel/OtelDetails/@x.Id">@x.Baslik</a></li>
+        }
+    </ul>
+</div>

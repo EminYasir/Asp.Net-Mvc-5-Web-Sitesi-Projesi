@@ -1,0 +1,31 @@
+﻿@model TravelTripProje.Models.Siniflar.AdresBlog
+@{
+    ViewBag.Title = "AdresGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Adres Güncelle</h2>
+
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.AdresAcik)
+    @Html.TextBoxFor(x => x.AdresAcik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Mail)
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Telefon)
+    @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Konum)
+    @Html.TextBoxFor(x => x.Konum, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-primary">Güncelle</button>
+</form>
