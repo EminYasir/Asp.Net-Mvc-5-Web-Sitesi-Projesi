@@ -6,7 +6,7 @@
     <ul>
         @foreach (var x in Model)
         {
-            <li><a href="/Otel/OtelDetails/@x.Otelid">@x.Yorum.Substring(0, 5)...</a> -> <a href="/Otel/OtelDetails/@x.Otelid">@x.Otel.Baslik</a></li>
+            <li><a href="/Otel/OtelDetails/@x.Otelid">@x.Yorum.Substring(0, 15)...</a> -> <a href="/Otel/OtelDetails/@x.Otelid">@x.Otel.Baslik</a></li>
         }
 
     </ul>
