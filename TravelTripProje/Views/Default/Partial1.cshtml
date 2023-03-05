@@ -4,15 +4,15 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-    <div class="con-bot">
+    <div class="con-bot" style="width:100%; height:auto;">
         @foreach (var x in Model)
         {
             <div class="left" style="margin-left:70px;">
-                <div class="bot-left">
-                    <img src="@x.BlogImage" style="width:100%; height:auto;"  alt="" />
+                <div class="bot-left" style="">
+                    <img src="@x.BlogImage" style="width: 100%; height: auto; "  alt="" />
                 </div>
                 <div class="left-text">
-                    <h4>@x.Baslik.Substring(0, 15)...</h4>
+                    <h4>@x.Baslik.Substring(0, 14)...</h4>
                     <span class="doller">@x.Tarih.ToString("dd.MM.yyyy")</span>
                     <p>@x.Aciklama.Substring(0, 80)...</p>
                     <p><a href="/Blog/BlogDetay/@x.ID"><span class="read">Devamını Oku >></span></a></p>
