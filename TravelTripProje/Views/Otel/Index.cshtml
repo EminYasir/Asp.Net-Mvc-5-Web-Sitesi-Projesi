@@ -25,7 +25,7 @@
 <body>
     <!--/header-->
     <div class="single">
-        <div class="container" style="padding-top:20px; width:70%;">
+        <div class="container" style="padding-top:20px; width:80%;">
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 single-main">
                 @foreach (var x in Model)
                 {
@@ -34,7 +34,8 @@
                             <img src="@x.Otelimage" alt="" style="margin-bottom:10px; width:350px; height:185px;" />
                         </div>
                         <a href="/Otel/OtelDetails/@x.Id" style="margin-left:15px;"> @x.Baslik</a>
-                        <span style="font-size: 12px; margin-left:15px; ">
+                        <br/>
+                        <span style="font-size: 11px; margin-left:15px; ">
                             @for (int i = 0; i < x.Yildiz; i++)
                             {
                                 <i class="fa fa-star" style="color:gold;"></i>
@@ -56,7 +57,7 @@
             </div>
 
 
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0 side-content" style="margin-top: 20px; position: fixed; margin-left: 52%;">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0 side-content" style="margin-top: 20px;">
                 @Html.Action("BesYildizOtels", "Otel")
                 @Html.Action("SonOtelYorums", "Otel")
             </div>

@@ -236,6 +236,9 @@
     <Content Include="web\images\arrows.png" />
     <Content Include="web\images\but.png" />
     <Content Include="web\images\contact.png" />
+    <Content Include="web\images\contact1.png" />
+    <Content Include="web\images\contact2.png" />
+    <Content Include="web\images\contact5.png" />
     <Content Include="web\images\dest_banner.jpg" />
     <Content Include="web\images\face.png" />
     <Content Include="web\images\flight.png" />
@@ -263,6 +266,7 @@
     <Content Include="web\images\pic7.jpg" />
     <Content Include="web\images\pic8.jpg" />
     <Content Include="web\images\pic9.jpg" />
+    <Content Include="web\images\sa.png" />
     <Content Include="web\index.html" />
     <Content Include="web\js\jquery.min.js" />
     <Content Include="web\js\responsiveslides.min.js" />

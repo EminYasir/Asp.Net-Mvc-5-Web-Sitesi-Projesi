@@ -7107,6 +7107,11 @@ button.close {
         display: none !important;
     }
 }
+@media (max-width: 500px) {
+    .container{
+        width:85%
+    }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .hidden-sm {

@@ -759,6 +759,9 @@ span.doller {
             width: auto;
         }
 
+    .wrap p{
+        margin-left:0px;
+    }
     #nav li a {
         padding: 7px 33px;
     }
@@ -848,6 +851,9 @@ span.doller {
 
     .right, .left {
         width: 29%;
+    }
+    .con-bot{
+        height:1500px;
     }
 
     .header_bottom_right_images {
@@ -1021,6 +1027,7 @@ span.doller {
     .header_bottom_right_images {
         width: 62%;
     }
+    
 
     .right, .left {
         width: 68%;

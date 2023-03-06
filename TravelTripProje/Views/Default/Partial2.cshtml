@@ -4,6 +4,6 @@
 @foreach (var x in Model)
 {
     <ul class="list list-pad">
-        <li class="list-bg"><span>@{ i++;}@i.</span><a href="/Blog/BlogDetay/@x.ID">@x.Baslik</a></li>
+        <a href="/Blog/BlogDetay/@x.ID"><li class="list-bg"><span>@{ i++;}@i.</span>@x.Baslik</li></a>
     </ul>
 }
