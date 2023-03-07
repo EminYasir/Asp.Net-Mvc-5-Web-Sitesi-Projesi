@@ -17,6 +17,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .wrap aaa {
     width: auto;
 }
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -223,54 +224,54 @@ body {
         transition: transform 0.1s linear;
     }
 
-    iframe:hover{
-        cursor:zoom-in;
+iframe:hover {
+    cursor: zoom-in;
+}
+
+#nav li {
+    float: left;
+    position: relative;
+}
+
+    #nav li a {
+        color: #FFFFFF;
+        display: block;
+        font-size: 16px;
+        padding: 7px 40px;
+        text-decoration: none;
     }
 
-    #nav li {
-        float: left;
-        position: relative;
+
+
+    #nav li:hover > a {
+        background: #291c1b;
+        border-radius: 5px 5px 5px 5px;
+        color: #FFFFFF;
     }
 
-        #nav li a {
-            color: #FFFFFF;
-            display: block;
-            font-size: 16px;
-            padding: 7px 50px;
-            text-decoration: none;
+
+        #nav li:hover > a.hsubs {
+            border-radius: 5px 5px 0 0;
         }
 
-
-
-        #nav li:hover > a {
-            background: #291c1b;
-            border-radius: 5px 5px 5px 5px;
-            color: #FFFFFF;
-        }
-
-
-            #nav li:hover > a.hsubs {
-                border-radius: 5px 5px 0 0;
-            }
-
-            #nav li:hover ul.subs {
-                left: 0;
-                top: 36px;
-                width: 250px;
-                -moz-transform: scaleY(1);
-                -ms-transform: scaleY(1);
-                -o-transform: scaleY(1);
-                -webkit-transform: scaleY(1);
-            }
-
-    #nav ul li {
-        width: 100%;
+    #nav li:hover ul.subs {
+        left: 0;
+        top: 36px;
+        width: 250px;
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -o-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
     }
 
-        #nav ul li:hover > a {
-            background: #291c1b !important;
-            border-radius: 5px 5px 5px 5px;
-        }
+#nav ul li {
+    width: 100%;
+}
+
+    #nav ul li:hover > a {
+        background: #291c1b !important;
+        border-radius: 5px 5px 5px 5px;
+    }
 /*--content--*/
 .header-banner {
     background: #f0f0f0;
@@ -759,11 +760,12 @@ span.doller {
             width: auto;
         }
 
-    .wrap p{
-        margin-left:0px;
-    }
+        .wrap p {
+            margin-left: 0px;
+        }
+
     #nav li a {
-        padding: 7px 33px;
+        padding: 7px 20px;
     }
 
     .header_bottom_right_images {
@@ -830,7 +832,7 @@ span.doller {
 
 @media(max-width:800px) {
     #nav li a {
-        padding: 7px 27px;
+        padding: 7px 20px;
     }
 
     .wrap aaa {
@@ -852,8 +854,9 @@ span.doller {
     .right, .left {
         width: 29%;
     }
-    .con-bot{
-        height:1500px;
+
+    .con-bot {
+        height: 1500px;
     }
 
     .header_bottom_right_images {
@@ -878,7 +881,7 @@ span.doller {
 
 @media(max-width:768px) {
     #nav li a {
-        padding: 7px 24px;
+        padding: 7px 15px;
     }
 
     .aaa {
@@ -918,7 +921,7 @@ span.doller {
     }
 
     #nav li a {
-        padding: 7px 22px;
+        padding: 7px 10px;
     }
 
     .header_bottom_right_images {
@@ -928,7 +931,7 @@ span.doller {
 
 @media(max-width:667px) {
     #nav li a {
-        padding: 7px 16px;
+        padding: 7px 10px;
     }
 
     .padding {
@@ -955,7 +958,7 @@ span.doller {
 
 @media(max-width:640px) {
     #nav li a {
-        padding: 7px 14px;
+        padding: 7px 5px;
     }
 
     .wrap aaa {
@@ -1015,7 +1018,7 @@ span.doller {
     }
 
     #nav li a {
-        padding: 7px 10px;
+        padding: 7px 5px;
     }
 
     .desti-middle {
@@ -1023,11 +1026,17 @@ span.doller {
     }
 }
 
+@media(max-width:611px) {
+    .con-right {
+        margin-top: 0px;
+    }
+}
+
 @media(max-width:568px) {
     .header_bottom_right_images {
         width: 62%;
     }
-    
+
 
     .right, .left {
         width: 68%;
@@ -1068,7 +1077,7 @@ span.doller {
     }
 
     #nav li a {
-        padding: 7px 7px;
+        padding: 7px 5px;
     }
 
 
@@ -1085,9 +1094,7 @@ span.doller {
         width: 58%;
     }
 
-    .con-right {
-        margin-top: 0px;
-    }
+
 
     .desti-middle {
         width: 250px;

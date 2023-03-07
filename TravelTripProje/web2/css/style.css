@@ -496,8 +496,12 @@ width: 27%;
 
 @media(max-width:768px){
 .logo{
-width:29%;
+ align-items:center;
 }
+	.aaa {
+		display: flex;
+		flex-direction: row;
+	}
 .sabit{
 	position:sticky;
 	margin-left:0%;
@@ -685,9 +689,21 @@ font-size:1.2em;
   margin-bottom: 2em;
 }
 }
+@media(max-width:611px) {
+	.aaa {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	
+	}
+	.con-right{
+		width:100%;
+	}
+}
 @media(max-width:480px){
 .logo {
-width: 33%;
+width: 100%;
 }
 .top-menu {
 width: 48%;

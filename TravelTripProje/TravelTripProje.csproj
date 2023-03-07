@@ -244,6 +244,7 @@
     <Content Include="web\images\flight.png" />
     <Content Include="web\images\glass.png" />
     <Content Include="web\images\group.png" />
+    <Content Include="web\images\hakk.jpg" />
     <Content Include="web\images\head_bg.jpg" />
     <Content Include="web\images\head_bot.gif" />
     <Content Include="web\images\img1.jpg" />

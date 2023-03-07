@@ -75,6 +75,7 @@ namespace TravelTripProje.Controllers
             a.ID = yrm.ID;
             a.Kullaniciadi= yrm.Kullaniciadi;
             a.Yorum=yrm.Yorum;
+            a.Mail=yrm.Mail;
             a.Blogid=yrm.Blogid;
             c.SaveChanges();
             return RedirectToAction("YorumlarıListele");
@@ -226,6 +227,7 @@ namespace TravelTripProje.Controllers
         {
             var a = c.OtelYorumlars.Find(yrm.ID);
             a.ID = yrm.ID;
+            a.Mail = yrm.Mail;
             a.Kullaniciadi = yrm.Kullaniciadi;
             a.Yorum = yrm.Yorum;
             a.Otelid = yrm.Otelid;
@@ -299,6 +301,7 @@ namespace TravelTripProje.Controllers
         {
             var a = c.MuzeYorumlars.Find(yrm.ID);
             a.ID = yrm.ID;
+            a.Mail = yrm.Mail;
             a.Kullaniciadi = yrm.Kullaniciadi;
             a.Yorum = yrm.Yorum;
             a.Muzeid = yrm.Muzeid;
