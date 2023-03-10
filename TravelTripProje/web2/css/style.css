@@ -593,6 +593,7 @@ width: 99%;
 top:18%;
 background-size:83%;
 }
+
 .search form input[type="text"]{
 padding:4px 6px;
 font-size:0.85em;
@@ -789,7 +790,6 @@ margin-bottom: 1em;
 .single-grid p {
 font-size: 0.85em;
 overflow: hidden;
-height: 165px;
 }
 .content-grid-info{
   margin-bottom: 1.5em;
