@@ -52,7 +52,7 @@ namespace TravelTripProje.Controllers
             return RedirectToAction("Index");
         }
         //Blok Yorum Kontrol
-        public ActionResult YorumlarıListele()
+        public ActionResult YorumlariListele()
         {
             var yorums = c.Yorumlars.ToList();
             return View(yorums);
@@ -62,7 +62,7 @@ namespace TravelTripProje.Controllers
             var yrm = c.Yorumlars.Find(id);
             c.Yorumlars.Remove(yrm);
             c.SaveChanges();
-            return RedirectToAction("YorumlarıListele");
+            return RedirectToAction("YorumlariListele");
         }
         public ActionResult YorumGetir(int id)
         {
@@ -78,7 +78,7 @@ namespace TravelTripProje.Controllers
             a.Mail=yrm.Mail;
             a.Blogid=yrm.Blogid;
             c.SaveChanges();
-            return RedirectToAction("YorumlarıListele");
+            return RedirectToAction("YorumlariListele");
         }
         //İletişim Sayfası Mail Kontrol
         public ActionResult MailListele()
@@ -206,7 +206,7 @@ namespace TravelTripProje.Controllers
         }
 
         //Otel Yorumları Kontrol
-        public ActionResult OtelYorumlarıListele()
+        public ActionResult OtelYorumlariListele()
         {
             var yorums = c.OtelYorumlars.ToList();
             return View(yorums);
@@ -216,7 +216,7 @@ namespace TravelTripProje.Controllers
             var yrm = c.OtelYorumlars.Find(id);
             c.OtelYorumlars.Remove(yrm);
             c.SaveChanges();
-            return RedirectToAction("OtelYorumlarıListele");
+            return RedirectToAction("OtelYorumlariListele");
         }
         public ActionResult OtelYorumGetir(int id)
         {
@@ -232,7 +232,7 @@ namespace TravelTripProje.Controllers
             a.Yorum = yrm.Yorum;
             a.Otelid = yrm.Otelid;
             c.SaveChanges();
-            return RedirectToAction("OtelYorumlarıListele");
+            return RedirectToAction("OtelYorumlariListele");
         }
         //Müze Kontrol
         public ActionResult MuzeListele()
@@ -280,7 +280,7 @@ namespace TravelTripProje.Controllers
             return RedirectToAction("MuzeListele");
         }
         //Müze Yorum Kontrol
-        public ActionResult MuzeYorumlarıListele()
+        public ActionResult MuzeYorumlariListele()
         {
             var yorums = c.MuzeYorumlars.ToList();
             return View(yorums);
@@ -290,7 +290,7 @@ namespace TravelTripProje.Controllers
             var yrm = c.MuzeYorumlars.Find(id);
             c.MuzeYorumlars.Remove(yrm);
             c.SaveChanges();
-            return RedirectToAction("MuzeYorumlarıListele");
+            return RedirectToAction("MuzeYorumlariListele");
         }
         public ActionResult MuzeYorumGetir(int id)
         {
@@ -306,7 +306,7 @@ namespace TravelTripProje.Controllers
             a.Yorum = yrm.Yorum;
             a.Muzeid = yrm.Muzeid;
             c.SaveChanges();
-            return RedirectToAction("MuzeYorumlarıListele");
+            return RedirectToAction("MuzeYorumlariListele");
         }
 
         // Hakkımızda Kontrol

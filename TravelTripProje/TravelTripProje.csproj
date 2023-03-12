@@ -311,7 +311,7 @@
     <Content Include="Views\Admin\YeniBlog.cshtml" />
     <Content Include="Views\Admin\BlogGetir.cshtml" />
     <Content Include="Views\Blog\YorumYap.cshtml" />
-    <Content Include="Views\Admin\YorumlarıListele.cshtml" />
+    <Content Include="Views\Admin\YorumlariListele.cshtml" />
     <Content Include="Views\Admin\YorumGetir.cshtml" />
     <Content Include="Views\Admin\YorumGuncelle.cshtml" />
     <Content Include="weblogin\fonts\Asap-Regular.ttf" />
@@ -340,13 +340,13 @@
     <Content Include="Views\Admin\OtelListele.cshtml" />
     <Content Include="Views\Admin\YeniOtelEkle.cshtml" />
     <Content Include="Views\Admin\OtelGetir.cshtml" />
-    <Content Include="Views\Admin\OtelYorumlarıListele.cshtml" />
+    <Content Include="Views\Admin\OtelYorumlariListele.cshtml" />
     <Content Include="Views\Admin\OtelYorumGetir.cshtml" />
     <Content Include="Views\Admin\MuzeListele.cshtml" />
     <Content Include="Views\Admin\YeniMuzeEkle.cshtml" />
     <Content Include="Views\Admin\MuzeGetir.cshtml" />
     <Content Include="Views\Admin\YoneticiGetir.cshtml" />
-    <Content Include="Views\Admin\MuzeYorumlarıListele.cshtml" />
+    <Content Include="Views\Admin\MuzeYorumlariListele.cshtml" />
     <Content Include="Views\Admin\MuzeYorumGetir.cshtml" />
     <Content Include="Views\Admin\Hakkimizda.cshtml" />
     <Content Include="Views\Admin\HakkimizdaGetir.cshtml" />
